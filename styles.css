@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    
 }
 
 
@@ -132,7 +132,7 @@ button:hover{
     height: 210px;
 }
 .section3{
-   
+ 
    margin-left: 50px;
 }
 @media(max-width: 375px) {
@@ -163,4 +163,22 @@ button:hover{
 }
 .text-card a:hover {
     color:blue;
+}
+.review{
+    background-color: #292E47;
+    height: 622px;
+    border: 2px solid red 
+}
+.image{
+    width: 150px;
+}
+.first, .third{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.profileImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }

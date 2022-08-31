@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_form.css">
+</head>
+
+<body>
+    
+<form action="">
+    <div class="title">
+        <h2>CONTACT US</h2>
+    </div>
+    <div class="half-name">
+        <div class="item-name">
+            <label for="name">NAME</label>
+            <input type="text" id="name">
+        </div>
+    </div>
+    <div class="half">
+        <div class="item">
+            <label for="phone">PHONE</label>
+            <input type="text" id="phone" required>
+            <p class="errorPhone">Es necesario el signo +</p>
+        </div>
+        <div class="item">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email">
+        </div>
+        </div>
+ 
+    <div class="full">
+        <label for="message">MESSAGE</label>
+        <textarea NAME="message" id="message">message</textarea>
+        <p class="error">No puede contener más de 50 caracteres</p>
+    </div>
+    <div class="action">
+        <input type="submit" value="SEND MESSAGE" id="submitBtn">
+        <input type="submit" value="RESET">
+    </div>
+</form>
+<script src="src.js"></script>
+</body>
+</html>
+
