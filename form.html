@@ -5,42 +5,55 @@
   <title>HTML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style_form.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header>
+        <img class="logo" src="images/circle.svg" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+            <a class="button" href="#"><button>Contact us</button></a>
+    </header>
     
 <form action="">
     <div class="title">
-        <h2>CONTACT US</h2>
+        <h2>Contact Us</h2>
     </div>
     <div class="half-name">
         <div class="item-name">
-            <label for="name">NAME</label>
-            <input type="text" id="name">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
         </div>
     </div>
     <div class="half">
         <div class="item">
-            <label for="phone">PHONE</label>
-            <input type="text" id="phone" required>
-            <p class="errorPhone">Es necesario el signo +</p>
+            <label for="email">Email</label>
+            <input type="email" id="email"  placeholder="Enter your email adress" required>
         </div>
         <div class="item">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" required>
+            <p class="errorPhone">It needs to contain the + sign</p>
         </div>
         </div>
  
     <div class="full">
-        <label for="message">MESSAGE</label>
-        <textarea NAME="message" id="message">message</textarea>
-        <p class="error">No puede contener más de 50 caracteres</p>
+        <label for="message">Message</label>
+        <textarea NAME="message" placeholder="Enter your message here..." required id="message"></textarea>
+        <p class="error">The message cannot contain more than 50 characters</p>
     </div>
     <div class="action">
-        <input type="submit" value="SEND MESSAGE" id="submitBtn">
-        <input type="submit" value="RESET">
+        <input type="submit" value="Submit" id="submitBtn">
     </div>
 </form>
+<footer>
+
+</footer>
 <script src="src.js"></script>
 </body>
 </html>
