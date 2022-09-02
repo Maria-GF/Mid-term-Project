@@ -73,13 +73,10 @@ form .half .item{
 }
 form label{
     display: block;
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 4px;
     margin-top: 4px;
     color: #292E47;
-
-   
-
 }
 form .half .item input{
     border: none;
@@ -134,4 +131,17 @@ form .action input{
     width: 100%;
     background-color: #072AC8;
     color: white;
+    border: none;
+    border-radius: 0%;
 }
+.footer{
+    display: flex;
+    width: 100%;
+
+}
+.container{
+    display: flex;
+    column-gap: 5%;
+}
+   
+
