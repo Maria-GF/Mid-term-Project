@@ -4,6 +4,10 @@
     padding: 0;
     
 }
+body{
+    font-family: "roboto";
+    
+}
 
 
 li, a, button {
@@ -166,8 +170,11 @@ button:hover{
 }
 .review{
     background-color: #292E47;
-    height: 622px;
-    border: 2px solid red 
+    height: 500px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 .image{
     width: 150px;
@@ -176,9 +183,89 @@ button:hover{
     display:flex;
     justify-content: space-around;
     align-items: center;
+   
 }
 .profileImage{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+.second{  
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #FFC600;
+    font-size: 25px;
+    width: 58%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 190px;
+    
+   
+}
+.first p{
+    font-size: 35px;
+    color: white;
+}
+.third p{
+    font-size: 10px;
+}
+.section5{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.card_services{
+    width: 100%;
+    margin: 30px;
+    margin-left: 90px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgb(149, 149, 221);
+    cursor: default; 
+    transition:all 400ms ease;
+    height: 250px;
+    position: relative;
+
+}
+
+.card_services:hover{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.card_services img{
+    width: 20%;
+    height: 35px;
+}
+.section5{
+ 
+   margin-left: 50px;
+}
+@media(max-width: 375px) {
+    .section5{
+        flex-direction: column;
+        margin: auto;
+    }
+}
+.card-title h1{
+    margin-left: 135px;
+}
+.text-card h3, p{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.text-card p{
+    margin-bottom: 30px;
+}
+.text-card a{
+       
+    position: absolute;
+    bottom: -70px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease 0s;
+}
+.text-card a:hover {
+    color:blue;
 }

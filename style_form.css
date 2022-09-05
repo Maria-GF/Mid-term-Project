@@ -8,11 +8,11 @@
 }
 body{
     background-color: #F2F4FC;
-    padding: 50px;
+ 
 }
 form{
     background: rgba(27, 31, 34, 0, 80 );
-    width: 640px;
+    width: 85%;
     margin: 50px auto;
     max-width: 97%;
     border-radius: 4px;
