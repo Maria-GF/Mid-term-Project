@@ -1,3 +1,5 @@
+const url = 'https://database.deta.sh/v1/a0wwnrex/contactmessages/items';
+
 let inputMessage= document.getElementById("message");
 console.log(inputMessage);
 let submitBtn = document.getElementById("submitBtn");
@@ -19,9 +21,6 @@ submitBtn.addEventListener("click", (event) => {
    }else{
     errorPhone[0].style.display= "none";
    }
-
-
-
    console.log(inputPhone.value.slice(0,1));
 });
 console.log(errorMessage[0]);
