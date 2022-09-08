@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.section7 img{
+    width: 100%;
+    height: 100vh;
+    padding: 60px;
+}  
+@media(max-width: 375px) {
+    .blog_title h1{
+       margin-left: 10px;
+    }
+    .blog_title p{
+        margin-left: 13px;
+    }
+    .section7 img{
+        width: 100%;
+    }
+}

@@ -239,10 +239,12 @@ button:hover{
     transform: translateY(-3%);
 }
 .card_services img{
-    width: 20%;
-    height: 35px;
+    width: 15%;
+    height: 15%;
     margin-top: 20px;
     margin-left: 10px;
+    background-color: rgb(184, 184, 224);
+    border-radius: 50%;
 }
 .section5{
  
@@ -280,6 +282,7 @@ button:hover{
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
 .questions_box{
     background-color: #FFC600;
     height: 500px;
