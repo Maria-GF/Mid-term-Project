@@ -1,5 +1,3 @@
-const url = 'https://database.deta.sh/v1/a0wwnrex/contactmessages/items';
-
 let inputMessage= document.getElementById("message");
 console.log(inputMessage);
 let submitBtn = document.getElementById("submitBtn");
@@ -29,4 +27,26 @@ submitBtn.addEventListener("click", (event) => {
 });
 console.log(errorMessage[0]);
 
+/*let apiKey = 'a0wwnrex_JeRhBybn5iFYziStv9d2M6Mchd2b4B4H';
+let url = 'https://database.deta.sh/v1/a0wwnrex/contactmessages/items';
 
+let options = {
+   method: 'POST',
+   header: {
+      'X-API-Key': 'a0wwnrex_JeRhBybn5iFYziStv9d2M6Mchd2b4B4H'
+   }
+}
+console.log(fetch(url,options));*/
+
+// si el formulario es correcto, también hay que impedir que se haga ek submit 
+//i hay que hacer una peticion, enviar esos datos a deta (que no vuelva a cargar la pagina y enviaremos los datos a deta)
+// detectar cuando el usuario pinche en submit y recoger esos datos, asignando esa información y enviarlo a DETA. 
+//Una vez hecho todo eso, mostraremos un mensaje confirmando que los datos se han enviado bien y limpiaremos el formulario
+const url = 'https://database.deta.sh/v1/a0wwnrex/contactmessages/items';
+
+const data = {
+   fullName:
+   email:
+   phone:
+   meaage:
+}

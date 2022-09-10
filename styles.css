@@ -1,15 +1,12 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;   
 }
 body{
-    font-family: "roboto";
+    font-family:sans-serif;
     
 }
-
-
 li, a, button {
     font-family: sans-serif;
     font-weight: 500;
@@ -28,8 +25,9 @@ header{
 }
 @media(max-width: 375px){
     header{
-        width: 300px;
+        width: 100px;
     }
+    
 }
 .logo{
     cursor: pointer;
@@ -47,6 +45,8 @@ header{
 .nav_links li a:hover {
     color:blue;
 }
+
+
 button{
     padding: 9px 25px;
     background-color: blue;
@@ -62,6 +62,8 @@ button:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 80%;
+    margin-left: 8%;
     border: 2px red solid;
     
 }
@@ -69,20 +71,22 @@ button:hover{
     .section1{
         flex-direction: column-reverse;
         margin: auto;
+        width: 100%;
+    }
+    .left-block{
+        border: 5px rgb(255, 0, 221) solid;
+        width: 100%;
+
     }
 }
-.left-block{
-    max-width: 350px;
-    /*margin-left: 90px;*/
-    border: 2px rgb(0, 4, 255) solid;
-
-    
+.title{
+    width: 60%;
 }
-
 .title h1{
     margin-top: 50px;
-    margin-bottom: 45px;
-    text-align: justify;
+    margin-bottom: 30px;
+    color: #292E47;
+    font-size: 40px;
 }
 .title p{
     margin-bottom: 45px;
@@ -91,35 +95,30 @@ button:hover{
 .right-block{
     display:flex;
     justify-content: right;
-    /*max-width: 350px;*/
     border: 2px rgb(0, 255, 0) solid;
-    position: relative;
-    
-
-   
+    position: relative;   
 }
 .picture{
-    width: 508px; 
-    
+    width: 400px;   
 }
 @media(max-width: 375px){
     .picture{
-        width: 360px;
+        max-width: 100%;
     }
 }
 .card1{
-    width: 200px;
-    height: 236px;
+    width: 235px;
+    height: 240px;
     position: absolute;
     top: 0;
     left: -30px;
-
 }
 .card2{
     width: 190px;
     height: 193px;
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
+    right: -35px;
 }
 @media(max-width: 375px){
     .card1, .card2{
@@ -151,19 +150,23 @@ button:hover{
 .section3{
     
     display: flex;
-    border: 2px green solid;
+    justify-content: center;
+    padding: 20px;
+    max-width: 85%;
 }
 @media(max-width: 375px) {
     .section3{
         display: flex;
         flex-direction: column;
-        width: 100%; 
+  
+    }
+    .card{
+        max-width: 90%;
     }
 }
 .card{
     width: 50%;
     margin: 30px;
-    margin-left: 90px;
     border-radius: 6px;
     overflow: hidden;
     background: #fff;
@@ -234,18 +237,40 @@ button:hover{
     height: 50px;
     border-radius: 50%;
 }
-.second{  
+.second p{  
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     text-align: center;
+    /*text-align: center;*/
     color: #FFC600;
     font-size: 25px;
-    width: 58%;
+    border: 2px red solid;
+    width: 55%;
+
+    /*width: 58%;/*
     margin-top: 60px;
     margin-bottom: 60px;
-    margin-left: 190px;
+    /*margin-left: 190px;*/
+}
+@media(max-width: 375px) {
+    .first p{
+        font-size: 2px;
+        border: 10px red solid;
+        text-align: center;
+
+    }
+    .second p{
+        width: 95%;
+        text-align: center;
+        border: 2px red solid;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .image{
+        display: none;
+    }
     
-   
+    
 }
 .first p{
     font-size: 35px;
@@ -256,34 +281,27 @@ button:hover{
 }
 .section5{
     width: 100%;
-    display: flex;
-    max-width: 1100px;
-}
-.card{
-    width: 20%;
-    border: 2px red solid;
+    display: flex;   
 }
 .card_services{
-    width: 100%;
+    width: 18%;
     margin: 30px;
-    margin-left: 90px;
     border-radius: 6px;
     background: #fff;
-    box-shadow: 0px 1px 10px rgb(149, 149, 221);
+    box-shadow: 0px 1px 10px rgb(207, 207, 238);
     cursor: default; 
     transition:all 400ms ease;
     height: 250px;
     position: relative;
 
 }
-
 .card_services:hover{
     box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
 .card_services img{
-    width: 15%;
-    height: 15%;
+    width: 13%;
+    height: 13%;
     margin-top: 20px;
     margin-left: 10px;
     background-color: rgb(184, 184, 224);
@@ -297,6 +315,10 @@ button:hover{
     .section5{
         flex-direction: column;
         margin: auto;
+    }
+    .card_services{
+        width: 70%;
+        margin-left: 50px;
     }
 }
 .card-title h1{
@@ -327,8 +349,7 @@ button:hover{
 }
 @media(max-width: 375px) {
     .card{
-        flex-direction: column;
-        border: 2px red solid;
+        width: max-content;
 
     }
 }
