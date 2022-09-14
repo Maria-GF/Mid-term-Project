@@ -8,6 +8,8 @@ let inputFullName = document.getElementById("name");
 let inputEmail = document.getElementById("email");
 let inputErrorMessage = false;
 let inputErrorPhone = false;
+let result_api = document.getElementsByClassName('result_api');
+let register = document.getElementById('register');
 const url = 'https://database.deta.sh/v1/a0wwnrex/contactmessages/items';
 
 submitBtn.addEventListener("click", (event) => {
@@ -53,10 +55,23 @@ submitBtn.addEventListener("click", (event) => {
          body: JSON.stringify(body),
         
       };
+      console.log(result_api);
    
       fetch(url, fetchParams)
          .then(res => res.json())
-         .then(result => console.log(result));   
+         .then(result => {
+            if(result.errors){
+               result_api[0].innerHTML = 'hay un error';
+               console.log('datos enviados mal');
+
+            }else{
+               result_api[0].innerText= 'datos enviados correctamente';
+               console.log('datos enviados bien');
+               register.reset();
+
+            };
+         });  
+
    }
 });
 

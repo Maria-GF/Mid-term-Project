@@ -137,8 +137,12 @@ form .action input{
 .flex-container{
     display: flex;
     text-align:justify;
+    justify-content: space-between;
     font-size: 10px;
     margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+
 
 }
 
@@ -150,6 +154,8 @@ form .action input{
     display:flex;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 30px;
+
 
 }
 
@@ -162,7 +168,8 @@ form .action input{
 }
 .column2{
     
-    width: 100%;
+    width: 500px;
+
 }
 @media (max-width: 375px){
     .flex-container{
@@ -181,6 +188,8 @@ form .action input{
     }
     .column2{
         margin-top: 10px;
+        width: 100%;
+
     }
     
 }
