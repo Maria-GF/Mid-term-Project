@@ -29,6 +29,8 @@
     margin-top: 6%;
     width: 85%;
     margin-left: 8%;
+    color: rgb(125, 131, 131);
+
 
 }
 .other_title{
@@ -44,10 +46,10 @@
         margin-left: 18px;
     }
     .section7 img{
-        width: 95%;
+        width: 83%;
         height: 30vh;
         margin: auto;
-        margin-left: 9px;
+        margin-left: 30px;
         
     }
 }
