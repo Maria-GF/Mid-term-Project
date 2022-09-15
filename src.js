@@ -13,19 +13,22 @@ let register = document.getElementById('register');
 const url = 'https://database.deta.sh/v1/a0wwnrex/contactmessages/items';
 
 submitBtn.addEventListener("click", (event) => {
-   event.preventDefault();
 
 // PrecentDefault para la acción, en el paso específico, pero continúan los siguientes pasos
    if(inputMessage.value.length > 50){
+      event.preventDefault();
+
 // con el block muestra el error
         errorMessage[0].style.display = "block";
         inputErrorMessage = true;
    }else{
-// si no cu ple con la primera condición, no muestra el error
+// si no cumple con la primera condición, no muestra el error
         errorMessage[0].style.display= "none";
         inputErrorMessage = false;
    }
    if(inputPhone.value.slice(0,1) !== "+"){
+      event.preventDefault();
+
 //evalua que en la posición 0,1 esté el signo +
     errorPhone[0].style.display = "block";
     inputErrorPhone = true;
@@ -61,12 +64,12 @@ submitBtn.addEventListener("click", (event) => {
          .then(res => res.json())
          .then(result => {
             if(result.errors){
-               result_api[0].innerHTML = 'hay un error';
-               console.log('datos enviados mal');
+               result_api[0].innerHTML = 'error';
+               console.log('Error');
 
             }else{
-               result_api[0].innerText= 'datos enviados correctamente';
-               console.log('datos enviados bien');
+               result_api[0].innerText= 'Thank you! Your message has been sent.';
+               console.log('Thank you! Your message has been sent.');
                register.reset();
 
             };
