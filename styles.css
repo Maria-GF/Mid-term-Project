@@ -64,18 +64,15 @@ button:hover{
     align-items: center;
     width: 80%;
     margin: auto;
-    border: 2px red solid;
     
 }
 
 .left-block{
-    border: 2px blue solid;
     width: 80%;
 
 }
 .title{
     width: 85%;
-    border: 2px red solid;
 }
 .title h1{
     margin-top: 50px;
@@ -95,7 +92,6 @@ button:hover{
         width: 300px;
     }
     .left-block{
-        border: 5px rgb(255, 0, 221) solid;
         width: 100%;
 
     }
@@ -109,7 +105,6 @@ button:hover{
 .right-block{
     display:flex;
     justify-content: right;
-    border: 2px rgb(0, 255, 0) solid;
     position: relative; 
     width: 800px;  
 }
@@ -129,7 +124,7 @@ button:hover{
     height: 240px;
     position: absolute;
     top: 0;
-    left: -30px;
+    left: 70px;
 }
 .card2{
     width: 190px;
@@ -172,7 +167,6 @@ button:hover{
     padding: 20px;
     max-width: 85%;
     margin:auto;
-    border: 2px red solid;
 }
 @media(max-width: 375px) {
     .section3{
@@ -273,7 +267,6 @@ button:hover{
     /*text-align: center;*/
     color: #FFC600;
     font-size: 25px;
-    border: 2px red solid;
     width: 55%;
 
     /*width: 58%;/*
@@ -284,14 +277,12 @@ button:hover{
 @media(max-width: 375px) {
     .first p{
         font-size: 2px;
-        border: 10px red solid;
         text-align: center;
 
     }
     .second p{
         width: 95%;
         text-align: center;
-        border: 2px red solid;
         font-size: 20px;
         padding: 5px;
     }
@@ -346,7 +337,6 @@ button:hover{
     justify-content: center;
 
    margin: auto;
-   border: 2px red solid;
 }
 @media(max-width: 375px) {
     .section5{
@@ -398,7 +388,7 @@ button:hover{
 .questions_box{
     background-color: #FFC600;
     height: 500px;
-    width: 78%;
+    width: 85%;
     margin: 0 auto;
     padding: 2rem;
     display:flex;
@@ -415,14 +405,13 @@ button:hover{
     .questions_title p{
         font-size: 5px;
         text-align: center;
-        border: 2px rgb(255, 0, 191) solid;
     }
     .questions_box button{
         width: 100%;
     }
 }
 .questions_box h4{
-    font-size: 35px;
+    font-size: 25px;
 }
 .questions_box p{
     font-size: 20px;
@@ -454,7 +443,6 @@ button:hover{
 }
 @media (max-width: 375px){
     .input_button{
-        border: 2px red solid;
         display: flex;
         flex-direction: column;
         align-items: stretc;
